@@ -1,0 +1,8 @@
+{
+  "name": "Remix: SalesSight AI",
+  "description": "Premium AI-powered CRM Analytics \u0026 Salesforce Data Summarization platform with predictive forecasting and intelligent chat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

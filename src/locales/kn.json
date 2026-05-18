@@ -1,0 +1,40 @@
+{
+  "common": {
+    "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+    "analytics": "ವಿಶ್ಲೇಷಣೆ",
+    "assistant": "AI ಸಹಾಯಕ",
+    "forecasting": "ಮುನ್ಸೂಚನೆ",
+    "insights": "ವ್ಯವಹಾರ ಒಳನೋಟಗಳು",
+    "customers": "ಗ್ರಾಹಕರು",
+    "upload": "ಡೇಟಾ ಅಪ್‌ಲೋಡ್",
+    "reports": "ವರದಿಗಳು",
+    "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "profile": "ಪ್ರೊಫೈಲ್",
+    "logout": "ಲಾಗ್ ಔಟ್",
+    "search": "ಹುಡುಕಿ...",
+    "connect_sf": "Salesforce ಸಂಪರ್ಕಿಸಿ",
+    "sf_live": "Salesforce ಲೈವ್",
+    "syncing": "SF ಸಿಂಕ್ ಆಗುತ್ತಿದೆ...",
+    "refresh": "ರಿಫ್ರೆಶ್",
+    "back": "ಹಿಂದಕ್ಕೆ"
+  },
+  "dashboard": {
+    "title": "ಕಾರ್ಯಕಾರಿ ಅವಲೋಕನ",
+    "subtitle": "ನೈಜ-ಸಮಯದ ಕಾರ್ಯಕ್ಷಮತೆಯ ಮೆಟ್ರಿಕ್ಸ್ ಮತ್ತು ಆದಾಯದ ಪಥ",
+    "total_revenue": "ಒಟ್ಟು ಆದಾಯ",
+    "deal_velocity": "ಡೀಲ್ ವೇಗ",
+    "active_pipeline": "ಸಕ್ರಿಯ ಪೈಪ್‌ಲೈನ್",
+    "avg_contract": "ಸರಾಸರಿ ಒಪ್ಪಂದದ ಮೌಲ್ಯ",
+    "revenue_trend": "ಆದಾಯದ ಪ್ರವೃತ್ತಿ",
+    "regional_performance": "ಪ್ರಾದೇಶಿಕ ಕಾರ್ಯಕ್ಷಮತೆ",
+    "product_distribution": "ಉತ್ಪನ್ನ ವಿತರಣೆ"
+  },
+  "ai": {
+    "engine_title": "AI ಸ್ಟ್ರಾಟಜಿ ಇಂಜಿನ್",
+    "dataset_synced": "ಡೇಟಾ ಸೆಟ್ ಸಿಂಕ್ರೊನೈಸ್ ಆಗಿದೆ",
+    "records": "ದಾಖಲೆಗಳು",
+    "prompt_placeholder": "ನಿಮ್ಮ ವಿಚಾರಣೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ...",
+    "generate_insights": "ಒಳನೋಟಗಳನ್ನು ರಚಿಸಿ",
+    "neural_report": "ಅಬ್ಸೊಲ್ಯೂಟ್ ನ್ಯೂಯರಲ್ ರಿಪೋರ್ಟ್"
+  }
+}

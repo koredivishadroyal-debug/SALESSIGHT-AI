@@ -1,0 +1,40 @@
+{
+  "common": {
+    "dashboard": "ഡാഷ്ബോർഡ്",
+    "analytics": "അനലിറ്റിക്സ്",
+    "assistant": "AI അസിസ്റ്റന്റ്",
+    "forecasting": "പ്രവചനം",
+    "insights": "ബിസിനസ്സ് ഉൾക്കാഴ്ചകൾ",
+    "customers": "ഉപഭോക്താക്കൾ",
+    "upload": "ഡാറ്റ അപ്‌ലോഡ്",
+    "reports": "റിപ്പോർട്ടുകൾ",
+    "settings": "ക്രമീകരണങ്ങൾ",
+    "profile": "പ്രൊഫൈൽ",
+    "logout": "ലോഗ് ഔട്ട്",
+    "search": "തിരയുക...",
+    "connect_sf": "Salesforce ബന്ധിപ്പിക്കുക",
+    "sf_live": "Salesforce ലൈവ്",
+    "syncing": "SF സിങ്ക് ചെയ്യുന്നു...",
+    "refresh": "പുതുക്കുക",
+    "back": "പിന്നിലേക്ക്"
+  },
+  "dashboard": {
+    "title": "എക്സിക്യൂട്ടീവ് അവലോകനം",
+    "subtitle": "തത്സമയ പ്രകടന അളവുകളും വരുമാന പാതയും",
+    "total_revenue": "ആകെ വരുമാനം",
+    "deal_velocity": "ഡീൽ വെലോസിറ്റി",
+    "active_pipeline": "സജീവ പൈപ്പ്‌ലൈൻ",
+    "avg_contract": "ശരാശരി കരാർ മൂല്യം",
+    "revenue_trend": "വരുമാന പ്രവണത",
+    "regional_performance": "പ്രാദേശിക പ്രകടനം",
+    "product_distribution": "ഉൽപ്പന്ന വിതരണം"
+  },
+  "ai": {
+    "engine_title": "AI സ്ട്രാറ്റജി എഞ്ചിൻ",
+    "dataset_synced": "ഡാറ്റാസെറ്റ് സമന്വയിപ്പിച്ചു",
+    "records": "രേഖകൾ",
+    "prompt_placeholder": "നിങ്ങളുടെ അന്വേഷണം ടൈപ്പ് ചെയ്യുക...",
+    "generate_insights": "ഉൾക്കാഴ്ചകൾ സൃഷ്ടിക്കുക",
+    "neural_report": "അബ്സൊല്യൂട്ട് ന്യൂറൽ റിപ്പോർട്ട്"
+  }
+}

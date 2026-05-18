@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Telugu:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Sans+Kannada:wght@400;700&family=Noto+Sans+Malayalam:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans-var), "Inter", "Noto Sans Devanagari", "Noto Sans Telugu", "Noto Sans Tamil", "Noto Sans Kannada", "Noto Sans Malayalam", ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-var), "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-main-bg: var(--bg-main);
+  --color-sidebar-bg: var(--bg-sidebar);
+  --color-brand-primary: var(--color-primary);
+  --color-brand-accent: var(--color-accent);
+}
+
+:root {
+  /* Default Terminal (Clean Dark) */
+  --bg-main: #0c0c0f;
+  --bg-main-rgb: 12, 12, 15;
+  --bg-sidebar: #08080a;
+  --font-sans-var: "Inter";
+  --font-display-var: "Space Grotesk";
+  --color-primary: #6366f1;
+  --color-accent: #a855f7;
+  --color-text-main: #f3f4f6;
+  --color-text-dim: #9ca3af;
+  --color-border: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme='luxury'] {
+  /* Executive Luxury (Clean & Elegant Light) */
+  --bg-main: #fcfaf7; /* Elegant Bone/Alabaster */
+  --bg-main-rgb: 252, 250, 247;
+  --bg-sidebar: #f5f2ed;
+  --font-sans-var: "Outfit";
+  --font-display-var: "Playfair Display";
+  --color-primary: #b4975a; /* Refined Muted Gold */
+  --color-accent: #8e9299;  /* Platinum Slate */
+  --color-text-main: #1a1c1e;
+  --color-text-dim: #6b7280;
+  --color-border: rgba(0, 0, 0, 0.08);
+}
+
+@layer base {
+  body {
+    @apply bg-main-bg text-[var(--color-text-main)] antialiased font-sans transition-colors duration-700 selection:bg-brand-primary/30;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-xl bg-white/[0.03] border-[var(--color-border)] shadow-2xl;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-2xl border-[var(--color-border)] rounded-[32px] transition-all duration-500;
+    background: color-mix(in srgb, var(--bg-main), transparent 30%);
+    box-shadow: 0 32px 128px rgba(0,0,0,0.1);
+  }
+  
+  [data-theme='terminal'] .glass-card {
+    @apply bg-[#0a0a0f]/40 shadow-[0_32px_128px_rgba(0,0,0,0.5)];
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(79, 70, 229, 0.5), 0 0 30px rgba(79, 70, 229, 0.2);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3), inset 0 0 20px rgba(79, 70, 229, 0.1);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; filter: blur(40px); }
+  50% { opacity: 1; filter: blur(60px); }
+}
+
+.glow-particle {
+  @apply absolute rounded-full mix-blend-screen;
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: var(--max-opacity, 0.7); transform: scale(1.2); }
+}
+
+.star {
+  @apply absolute bg-white rounded-full opacity-0;
+  animation: twinkle var(--duration, 3s) infinite var(--delay, 0s);
+}
+
+.markdown-body h1 { @apply text-2xl font-bold mb-4 mt-6 text-[var(--color-text-main)] font-display transition-colors; }
+.markdown-body h2 { @apply text-xl font-bold mb-3 mt-5 text-[var(--color-text-main)] font-display transition-colors; }
+.markdown-body h3 { @apply text-lg font-bold mb-2 mt-4 text-[var(--color-text-main)] font-display transition-colors; }
+.markdown-body p { @apply mb-4 leading-relaxed text-[var(--color-text-dim)] transition-colors; }
+.markdown-body ul { @apply list-disc pl-6 mb-4 text-[var(--color-text-dim)] transition-colors; }
+.markdown-body ol { @apply list-decimal pl-6 mb-4 text-[var(--color-text-dim)] transition-colors; }
+.markdown-body li { @apply mb-1; }
+.markdown-body code { @apply bg-brand-primary/10 px-1 py-0.5 rounded text-sm font-mono text-brand-primary; }
+.markdown-body pre { @apply bg-brand-primary/5 p-4 rounded-xl mb-4 overflow-x-auto border border-[var(--color-border)]; }
+.markdown-body blockquote { @apply border-l-4 border-brand-primary pl-4 italic my-4 text-[var(--color-text-dim)]; }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-white/5 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/10;
+}
